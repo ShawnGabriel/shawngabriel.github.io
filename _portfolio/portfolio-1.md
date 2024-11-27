@@ -1,7 +1,7 @@
 ---
 title: "3D Mesh Surface Reconstruction From Point Clouds"
 excerpt: "<img src='/images/DeepView.jpg'><br/><br/>
-2nd Place of UBC DSCI Club x DarkVision Computer Vision Hackathon
+**2nd Place of UBC DSCI Club x DarkVision Computer Vision Hackathon**
 <br/>"
 collection: portfolio
 ---
