@@ -41,7 +41,7 @@ Then, we moved on to a research paper published in 2019 called <a href = "https:
 Reconstruction From Point Clouds
 ------
 <div style="text-align: justify;">
-So when started out, we tried to generate the results using the author's model. We thought we succeeded at first (more on this later), so, we then attempted to make our own model.  The repository had three **4 files** in order to build a desired model, as shown below:
+So when started out, we tried to generate the results using the author's model. We thought we succeeded at first (more on this later), so, we then attempted to make our own model.  The repository had three <strong>4 files</strong> in order to build a desired model, as shown below:
 </div>
 - **c0.py** contains all of the distinctive parameters for the model itself, ranging from the number of recurrent layers to the number of epochs.
 - **c1args.py** is where we preprocess the training data, both the ultrasound scans and the corresponding meshes.
