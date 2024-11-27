@@ -12,7 +12,7 @@ In this project, [Reyhan Pamungkas](https://github.com/adhgn) and I attempt to r
 
 Introduction to The Challenge
 =======
-The techniques that this project used, was utilized in biomedical imaging such as CT and SPECT scans, but we repurpose it for non-destructive testing of industrial components, such as steel pipes. By detecting manufacturing defects in **steel pipes**, the framework has industrial applications in **quality assurance** and **safety**. The challenge didn't provide a definitive guide that told us to recreate the solutions of the SMRVIS Paper, not until 2 days after the challenge was published. Hence, the methodologies tested were 
+The techniques that this project used, was utilized in biomedical imaging such as CT and SPECT scans, but we repurpose it for non-destructive testing of industrial components, such as steel pipes. By detecting manufacturing defects in **steel pipes**, the framework has industrial applications in **quality assurance** and **safety**. The challenge didn't provide a definitive guide that told us to recreate the solutions of the SMRVIS Paper, not until 2 days after the challenge was published. Hence, the methodologies tested can be seen as an experimentation phase, as we weren't given clear instructions on how to approach the problem.
 
 Methodology
 ======
@@ -22,3 +22,13 @@ At first, we leveraged the AI models, ChatGPT 4o and Claude 3.5 Sonnet. However,
 
 Voxel2Mesh Paper
 ------
+Then, we moved on to a research paper published in 2019 called [Voxel2Mesh 3D Mesh Model Generation from Volumetric Data](https://arxiv.org/abs/1912.03681) by Wickramasinghe et al. where we tried approaching the code and figuring out how to recreate our own model. Unfortuantely, we then realized that it required both the volumes and meshes files to be in the same format which was an npy file. We then try modify the code to different file formats which in the end still didnt work. This was a pivotal moment for us, as we decided to exit out of implementing this paper. To our knowledge and intuition of the orchestration of the repository, we figured that altering the preprocessing file would lead numerous problems related to other files. 
+<br/>
+Below is our attempt in modifying the preprocessing section of the repository.
+<br/>
+<img src='/images/Attempt.png'>
+<br/>
+
+Reconstruction From Point Clouds
+------
+So when started out, we tried to generate the results using the author's model. We thought we succeeded at first (more on this later), so, we then attempted to make our own model.  The repository had three key files in order to build a desired model. As shown below, c0.py is c1args.py is and c2load.py is 
