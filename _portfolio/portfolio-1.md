@@ -1,7 +1,7 @@
 ---
 title: "3D Mesh Surface Reconstruction From Point Clouds"
 excerpt: "Surface mesh reconstruction from 3D volumetric data, in this case, ultrasound scans of steel pipes, in order
-to detect defects within them <br/><img src='/images/500x300.png'>"
+to detect defects within them <br/><img src='/images/DarkVision.png'>"
 collection: portfolio
 ---
 
