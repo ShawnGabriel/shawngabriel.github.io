@@ -16,6 +16,7 @@ The techniques that this project used, was utilized in biomedical imaging such a
 
 Methodology
 ======
+**We went through 3 methods which we explain thoroughly**
 
 Brute Force Method
 ------
@@ -33,4 +34,19 @@ Then, we moved on to a research paper published in 2019 called [Voxel2Mesh 3D Me
 
 Reconstruction From Point Clouds
 ------
-So when started out, we tried to generate the results using the author's model. We thought we succeeded at first (more on this later), so, we then attempted to make our own model.  The repository had three key files in order to build a desired model. As shown below, c0.py is c1args.py is and c2load.py is 
+So when started out, we tried to generate the results using the author's model. We thought we succeeded at first (more on this later), so, we then attempted to make our own model.  The repository had three **4 files** in order to build a desired model, as shown below:
+- **c0.py** contains all of the distinctive parameters for the model itself, ranging from the number of recurrent layers to the number of epochs.
+- **c1args.py** is where we preprocess the training data, both the ultrasound scans and the corresponding meshes.
+- **c2load.py** is the core of the model. It requires all preceding files to be fully runnable in order to be executed.
+- **test.py** is where the model is fed with the testing data and aims to reconstruct a surface mesh from given 3D volumetric data.
+
+Model Architecture
+------
+**Why did we choose the R2 U-Net model?**
+<br/>
+In all honesty, the R2 U-Net was one of the best performing models according to the paper. Additionally, this architecture was one of the three architectures that had most of the parameters defined from the authors comments within each separate file. Now let's get technical. As we know, residual layers allows us leverage skip connections, giving we have a deep layer; we wouldn't want the model to be unable to learn, countering the vanishing gradient problem. Other than that, recurrent layers are used so each convolution block would be able to learn from their past mistakes, feeding into the same convolution block for **n amount of times**.
+
+Results & Evaluation
+======
+
+
