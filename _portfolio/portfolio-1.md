@@ -25,7 +25,7 @@ At first, we leveraged the AI models, ChatGPT 4o and Claude 3.5 Sonnet. However,
 Voxel2Mesh Paper
 ------
 <div style="text-align: justify;">
-Then, we moved on to a research paper published in 2019 called [Voxel2Mesh 3D Mesh Model Generation from Volumetric Data](https://arxiv.org/abs/1912.03681) by Wickramasinghe et al. where we tried approaching the code and figuring out how to recreate our own model. Unfortuantely, we then realized that it required both the volumes and meshes files to be in the same format which was an npy file. We then try modify the code to different file formats which in the end still didnt work. This was a pivotal moment for us, as we decided to exit out of implementing this paper. To our knowledge and intuition of the orchestration of the repository, we figured that altering the preprocessing file would lead numerous problems related to other files. 
+Then, we moved on to a research paper published in 2019 called <a href = "https://arxiv.org/abs/1912.03681">Voxel2Mesh: 3D Mesh Model Generation from Volumetric Data</a> by Wickramasinghe et al. where we tried approaching the code and figuring out how to recreate our own model. Unfortuantely, we then realized that it required both the volumes and meshes files to be in the same format which was an npy file. We then try modify the code to different file formats which in the end still didnt work. This was a pivotal moment for us, as we decided to exit out of implementing this paper. To our knowledge and intuition of the orchestration of the repository, we figured that altering the preprocessing file would lead numerous problems related to other files. 
 </div>
 <br/>
 <br/>
