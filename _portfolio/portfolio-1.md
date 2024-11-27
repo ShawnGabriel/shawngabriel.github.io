@@ -1,5 +1,5 @@
 ---
-title: "3D Mesh Surface Reconstruction From Point Clouds"
+title: "3D Mesh Surface Reconstruction From Point Clouds (Nov 2024)"
 excerpt: "<img src='/images/DeepView.jpg'><br/><br/>
 **2nd Place of UBC DSCI x DarkVision Computer Vision Hackathon**
 <br/>"
