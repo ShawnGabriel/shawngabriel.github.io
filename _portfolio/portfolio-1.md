@@ -16,7 +16,6 @@ The techniques that this project used, was utilized in biomedical imaging such a
 
 Methodology
 ======
-**We went through 3 methods which we explain thoroughly**
 
 Brute Force Method
 ------
@@ -45,6 +44,7 @@ Model Architecture
 **Why did we choose the R2 U-Net model?**
 <br/>
 In all honesty, the R2 U-Net was one of the best performing models according to the paper. Additionally, this architecture was one of the three architectures that had most of the parameters defined from the authors comments within each separate file. Now let's get technical. As we know, residual layers allows us leverage skip connections, giving we have a deep layer; we wouldn't want the model to be unable to learn, countering the vanishing gradient problem. Other than that, recurrent layers are used so each convolution block would be able to learn from their past mistakes, feeding into the same convolution block for **n amount of times**.
+
 
 Results & Evaluation
 ======
