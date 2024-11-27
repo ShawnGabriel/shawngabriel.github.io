@@ -16,6 +16,7 @@ The techniques that this project used, was utilized in biomedical imaging such a
 
 Methodology
 ======
+We explored a total of 3 methodologies, where each one played a crucial role in the development of our overall understanding of the challenge and the expected output to be yield by any model we decided to choose. Each methodology shined a light on how we viewed the overarching problem and what needs to be done immediately after each successes to keep a constant momentum, given that we only had **5 days** to work on the challenge during the reading break.
 
 Brute Force Method
 ------
