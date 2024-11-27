@@ -2,6 +2,7 @@
 title: "3D Mesh Surface Reconstruction From Point Clouds"
 excerpt: "Surface mesh reconstruction from 3D volumetric data, in this case, ultrasound scans of steel pipes, in order
 to detect defects within them 
+
 <br/><img src='/images/DeepView.jpg'>"
 collection: portfolio
 ---
@@ -10,4 +11,4 @@ In this project, [Reyhan Pamungkas](https://github.com/adhgn) and I attempt to r
 
 <br/><img src='/images/DarkVision.png'>
 
-The techniques that this project used, was utilized in biomedical imaging such as CT and SPECT scans. but we repurpose it for NDT of industrial components, such as steel pipes.
+The techniques that this project used, was utilized in biomedical imaging such as CT and SPECT scans. but we repurpose it for NDT of industrial components, such as steel pipes. By detecting manufacturing defects in steel pipes, the framework has industrial applications in quality assurance and safety.
