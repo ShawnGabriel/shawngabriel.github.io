@@ -20,7 +20,9 @@ We explored a total of 3 methodologies, where each one played a crucial role in 
 
 Brute Force Method
 ------
+<div style="text-align: justify;">
 At first, we leveraged the AI models, ChatGPT 4o and Claude 3.5 Sonnet. However, after receiving their inputs and trying to run them, it was a catastrophe. It was super hard to debug, because the AI models lack so much context of the problem we're trying to solve. And ultimately, the problem itself was too sophisticated to be digest by a language model and come up with a definitive/instant solution.
+</div>
 
 Voxel2Mesh Paper
 ------
@@ -38,7 +40,9 @@ Then, we moved on to a research paper published in 2019 called <a href = "https:
 
 Reconstruction From Point Clouds
 ------
+<div style="text-align: justify;">
 So when started out, we tried to generate the results using the author's model. We thought we succeeded at first (more on this later), so, we then attempted to make our own model.  The repository had three **4 files** in order to build a desired model, as shown below:
+</div>
 - **c0.py** contains all of the distinctive parameters for the model itself, ranging from the number of recurrent layers to the number of epochs.
 - **c1args.py** is where we preprocess the training data, both the ultrasound scans and the corresponding meshes.
 - **c2load.py** is the core of the model. It requires all preceding files to be fully runnable in order to be executed.
