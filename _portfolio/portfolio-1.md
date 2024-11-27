@@ -1,6 +1,7 @@
 ---
 title: "3D Mesh Surface Reconstruction From Point Clouds
 <br/><img src='/images/DeepView.jpg'>"
+
 excerpt: "2nd Place of UBC Data Science Club x DarkVision Computer Vision Hackathon"
 collection: portfolio
 ---
@@ -9,4 +10,6 @@ In this project, [Reyhan Pamungkas](https://github.com/adhgn) and I attempt to r
 
 <br/><img src='/images/DarkVision.png'>
 
-The techniques that this project used, was utilized in biomedical imaging such as CT and SPECT scans. but we repurpose it for NDT of industrial components, such as steel pipes. By detecting manufacturing defects in steel pipes, the framework has industrial applications in quality assurance and safety.
+Importance
+=======
+The techniques that this project used, was utilized in biomedical imaging such as CT and SPECT scans, but we repurpose it for non-destructive testing of industrial components, such as steel pipes. By detecting manufacturing defects in steel pipes, the framework has industrial applications in quality assurance and safety.
