@@ -30,7 +30,9 @@ Then, we moved on to a research paper published in 2019 called [Voxel2Mesh 3D Me
 <img src='/images/Attempt.png'>
 <br/>
 <br/>
+<div align="center">
 **Above is our attempt in modifying the preprocessing section of the repository.**
+</div>
 
 Reconstruction From Point Clouds
 ------
@@ -44,10 +46,24 @@ Model Architecture
 ------
 **Why did we choose the R2 U-Net model?**
 <br/>
-In all honesty, the R2 U-Net was one of the best performing models according to the paper. Additionally, this architecture was one of the three architectures that had most of the parameters defined from the authors comments within each separate file. Now let's get technical. As we know, residual layers allows us leverage skip connections, giving we have a deep layer; we wouldn't want the model to be unable to learn, countering the vanishing gradient problem. Other than that, recurrent layers are used so each convolution block would be able to learn from their past mistakes, feeding into the same convolution block for **n amount of times**.
+In all honesty, the R2 U-Net was one of the best performing models according to the paper, hence our decision. Additionally, this architecture was one of the three architectures that had most of the parameters defined from the authors comments within each separate file. Now let's get technical. As we know, residual layers allows us leverage skip connections, giving we have a deep layer; we wouldn't want the model to be unable to learn, countering the vanishing gradient problem. Other than that, recurrent layers are used so each convolution block would be able to learn from their past mistakes, feeding into the same convolution block for **n amount of times**.
 
 
 Results & Evaluation
 ======
+By using the model we saved earlier, we are inputting some of the steelpipe data, and then comparing it to the reference mesh by using 5 metrics:
+- F1 Score: ,
+- Chamfer Distance: ,
+- Hausdorff Distance: ,
+- Mean Surface Distance (MSD): ,
+- Residual Mean Square Distance (RMSD): 
+
+For direct Hausdorff Distance values, we failed to calculate them because it took a very long time to run it. This is due to us having very limited time and resources, we decided to not include the values here. Along with us not able to calculate the Hausdorff Distance, we also see that the value for each metrics are not ideal for a functioning and viable model. We suspect that these problems are resulted due to the resulting npz file having so many points compared to the reference mesh. Here it says that the npz file contains 83 million points inside the array, compared to the mesh file which only has 40,000 points. This makes each metric produce a unreasonable value.
+
+Challeges & Solutions
+======
+
+
+
 
 
