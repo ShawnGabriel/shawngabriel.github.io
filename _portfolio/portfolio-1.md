@@ -1,8 +1,7 @@
 ---
-title: "3D Mesh Surface Reconstruction From Point Clouds
+title: "3D Mesh Surface Reconstruction From Point Clouds"
+excerpt: "2nd Place of UBC Data Science Club x DarkVision Computer Vision Hackathon
 <br/><img src='/images/DeepView.jpg'>"
-
-excerpt: "2nd Place of UBC Data Science Club x DarkVision Computer Vision Hackathon"
 collection: portfolio
 ---
 
