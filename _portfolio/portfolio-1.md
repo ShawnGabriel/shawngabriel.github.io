@@ -6,7 +6,7 @@ excerpt: "<img src='/images/DeepView.jpg'><br/><br/>
 collection: portfolio
 ---
 <div style="text-align: justify;">
-In this project, [Reyhan Pamungkas](https://github.com/adhgn) and I attempt to recreate the solutions of the [SMRVIS: Point cloud extraction from 3-D ultrasound for non-destructive testing Paper](https://www.researchgate.net/publication/371414251_SMRVIS_Point_cloud_extraction_from_3-D_ultrasound_for_non-destructive_testing) by Tang, L. T. W. for a challenge hosted by UBC Data Science Club in collaboration with DarkVision, a British Columbia-based company that specializes in industrial imaging technology. The code for this project can be found [here](https://github.com/ShawnGabriel/3D-Mesh-Reconstruction-From-Point-Clouds).
+In this project, <a href = "https://github.com/adhgn">Reyhan Pamungkas</a> and I attempt to recreate the solutions of the [SMRVIS: Point cloud extraction from 3-D ultrasound for non-destructive testing Paper](https://www.researchgate.net/publication/371414251_SMRVIS_Point_cloud_extraction_from_3-D_ultrasound_for_non-destructive_testing) by Tang, L. T. W. for a challenge hosted by UBC Data Science Club in collaboration with DarkVision, a British Columbia-based company that specializes in industrial imaging technology. The code for this project can be found <a href = "https://github.com/ShawnGabriel/3D-Mesh-Reconstruction-From-Point-Clouds">here</a>.
 </div>
 <br/><img src='/images/DarkVision.png'>
 
@@ -15,7 +15,7 @@ Introduction to The Challenge
 <div style="text-align: justify;">
 The techniques that this project used, was utilized in biomedical imaging such as CT and SPECT scans, but we repurpose it for non-destructive testing of industrial components, such as steel pipes. By detecting manufacturing defects in **steel pipes**, the framework has industrial applications in **quality assurance** and **safety**. The challenge didn't provide a definitive guide that told us to recreate the solutions of the SMRVIS Paper, not until 2 days after the challenge was published. Hence, the methodologies tested can be seen as an experimentation phase, as we weren't given clear instructions on how to approach the problem.
 </div>
-
+<br/>
 Methodology
 ======
 <div style="text-align: justify;">
@@ -59,11 +59,13 @@ Model Architecture
 <br/>
 In all honesty, the R2 U-Net was one of the best performing models according to the paper, hence our decision. Additionally, this architecture was one of the three architectures that had most of the parameters defined from the authors comments within each separate file. Now let's get technical. As we know, residual layers allows us leverage skip connections, giving we have a deep layer; we wouldn't want the model to be unable to learn, countering the vanishing gradient problem. Other than that, recurrent layers are used so each convolution block would be able to learn from their past mistakes, feeding into the same convolution block for **n amount of times**.
 </div>
+<br/>
 
 Results & Evaluation
 ======
 <div style="text-align: justify;">
 By using the model we saved earlier, we are inputting some of the steelpipe data, and then comparing it to the reference mesh by using 5 metrics:
+</div>
 - F1 Score: The harmonic mean of precision and recall, used to evaluate the performance of a classification model, especially in cases of imbalanced datasets. It is calculated as
 Inline: The formula is $F1 = 2 \cdot \frac{\text{Precision} \cdot \text{Recall}}{\text{Precision} + \text{Recall}}$.
 Block:
@@ -74,7 +76,7 @@ $$
 - Hausdorff Distance: A measure of similarity between two sets of points. It calculates the maximum distance from a point in one set to the closest point in the other set, considering all points in both sets.
 - Mean Surface Distance (MSD): The average of the distances from points on one surface to the closest points on another surface. It provides a measure of how closely two surfaces align.
 - Residual Mean Square Distance (RMSD): A measure of the average squared difference between the positions of corresponding points in two datasets, typically used in structural alignment or point cloud comparison. It is calculated as the square root of the average of squared differences between corresponding points.
-
+<div style="text-align: justify;">
 For direct Hausdorff Distance values, we failed to calculate them because it took a very long time to run it. This is due to us having very limited time and resources, we decided to not include the values here. Along with us not able to calculate the Hausdorff Distance, we also see that the value for each metrics are not ideal for a functioning and viable model. We suspect that these problems are resulted due to the resulting npz file having so many points compared to the reference mesh. Here it says that the npz file contains 83 million points inside the array, compared to the mesh file which only has 40,000 points. This makes each metric produce a unreasonable value.
 </div>
 
