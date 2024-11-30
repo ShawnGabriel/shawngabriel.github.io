@@ -1,25 +1,26 @@
 ---
 title: "3D Mesh Surface Reconstruction From Point Clouds (Nov 2024)"
 excerpt: "<img src='/images/DeepView.jpg'><br/><br/>
-**2nd Place of UBC DSCI x DarkVision Computer Vision Hackathon**
+<strong>2nd Place of UBC DSCI x DarkVision Computer Vision Hackathon<strong>
 <br/>"
 collection: portfolio
 ---
 <div style="text-align: justify;">
-In this project, <a href = "https://github.com/adhgn">Reyhan Pamungkas</a> and I attempt to recreate the solutions of the [SMRVIS: Point cloud extraction from 3-D ultrasound for non-destructive testing Paper](https://www.researchgate.net/publication/371414251_SMRVIS_Point_cloud_extraction_from_3-D_ultrasound_for_non-destructive_testing) by Tang, L. T. W. for a challenge hosted by UBC Data Science Club in collaboration with DarkVision, a British Columbia-based company that specializes in industrial imaging technology. The code for this project can be found <a href = "https://github.com/ShawnGabriel/3D-Mesh-Reconstruction-From-Point-Clouds">here</a>.
+In this project, <a href = "https://github.com/adhgn">Reyhan Pamungkas</a> and I attempt to recreate the solutions of the <a href = "https://www.researchgate.net/publication/371414251_SMRVIS_Point_cloud_extraction_from_3-D_ultrasound_for_non-destructive_testing">SMRVIS: Point cloud extraction from 3-D ultrasound for non-destructive testing Paper</a> by Tang, L. T. W. for a challenge hosted by UBC Data Science Club in collaboration with DarkVision, a British Columbia-based company that specializes in industrial imaging technology. The code for this project can be found <a href = "https://github.com/ShawnGabriel/3D-Mesh-Reconstruction-From-Point-Clouds">here</a>.
 </div>
 <br/><img src='/images/DarkVision.png'>
 
 Introduction to The Challenge
 =======
 <div style="text-align: justify;">
-The techniques that this project used, was utilized in biomedical imaging such as CT and SPECT scans, but we repurpose it for non-destructive testing of industrial components, such as steel pipes. By detecting manufacturing defects in **steel pipes**, the framework has industrial applications in **quality assurance** and **safety**. The challenge didn't provide a definitive guide that told us to recreate the solutions of the SMRVIS Paper, not until 2 days after the challenge was published. Hence, the methodologies tested can be seen as an experimentation phase, as we weren't given clear instructions on how to approach the problem.
+The techniques that this project used, was utilized in biomedical imaging such as CT and SPECT scans, but we repurpose it for non-destructive testing of industrial components, such as steel pipes. By detecting manufacturing defects in <strong>steel pipes<strong>, the framework has industrial applications in <strong>quality assurance<strong> and <strong>safety<strong>. The challenge didn't provide a definitive guide that told us to recreate the solutions of the SMRVIS Paper, not until 2 days after the challenge was published. Hence, the methodologies tested can be seen as an experimentation phase, as we weren't given clear instructions on how to approach the problem.
 </div>
 <br/>
+
 Methodology
 ======
 <div style="text-align: justify;">
-We explored a total of 3 methodologies, where each one played a crucial role in the development of our overall understanding of the challenge and the expected output to be yield by any model we decided to choose. Each methodology shined a light on how we viewed the overarching problem and what needs to be done immediately after each successes to keep a constant momentum, given that we only had **5 days** to work on the challenge during the reading break.
+We explored a total of 3 methodologies, where each one played a crucial role in the development of our overall understanding of the challenge and the expected output to be yield by any model we decided to choose. Each methodology shined a light on how we viewed the overarching problem and what needs to be done immediately after each successes to keep a constant momentum, given that we only had <strong>5 days<strong> to work on the challenge during the reading break.
 </div>
 
 Brute Force Method
@@ -39,7 +40,7 @@ Then, we moved on to a research paper published in 2019 called <a href = "https:
 <br/>
 <br/>
 <div align="center">
-**Above is our attempt in modifying the preprocessing section of the repository.**
+<strong>Above is our attempt in modifying the preprocessing section of the repository.</strong>
 </div>
 
 Reconstruction From Point Clouds
@@ -47,17 +48,17 @@ Reconstruction From Point Clouds
 <div style="text-align: justify;">
 So when started out, we tried to generate the results using the author's model. We thought we succeeded at first (more on this later), so, we then attempted to make our own model.  The repository has <strong>4 files</strong> in order to build a desired model, as shown below:
 </div>
-- **c0.py** contains all of the distinctive parameters for the model itself, ranging from the number of recurrent layers to the number of epochs.
-- **c1args.py** is where we preprocess the training data, both the ultrasound scans and the corresponding meshes.
-- **c2load.py** is the core of the model. It requires all preceding files to be fully runnable in order to be executed.
-- **test.py** is where the model is fed with the testing data and aims to reconstruct a surface mesh from given 3D volumetric data.
+- <strong>c0.py</strong> contains all of the distinctive parameters for the model itself, ranging from the number of recurrent layers to the number of epochs.
+- <strong>c1args.py</strong> is where we preprocess the training data, both the ultrasound scans and the corresponding meshes.
+- <strong>c2load.py</strong> is the core of the model. It requires all preceding files to be fully runnable in order to be executed.
+- <strong>test.py</strong> is where the model is fed with the testing data and aims to reconstruct a surface mesh from given 3D volumetric data.
 
 Model Architecture
 ------
 <div style="text-align: justify;">
-**Why did we choose the R2 U-Net model?**
+<strong>Why did we choose the R2 U-Net model?</strong>
 <br/>
-In all honesty, the R2 U-Net was one of the best performing models according to the paper, hence our decision. Additionally, this architecture was one of the three architectures that had most of the parameters defined from the authors comments within each separate file. Now let's get technical. As we know, residual layers allows us leverage skip connections, giving we have a deep layer; we wouldn't want the model to be unable to learn, countering the vanishing gradient problem. Other than that, recurrent layers are used so each convolution block would be able to learn from their past mistakes, feeding into the same convolution block for **n amount of times**.
+In all honesty, the R2 U-Net was one of the best performing models according to the paper, hence our decision. Additionally, this architecture was one of the three architectures that had most of the parameters defined from the authors comments within each separate file. Now let's get technical. As we know, residual layers allows us leverage skip connections, giving we have a deep layer; we wouldn't want the model to be unable to learn, countering the vanishing gradient problem. Other than that, recurrent layers are used so each convolution block would be able to learn from their past mistakes, feeding into the same convolution block for <strong>n amount of times</strong>.
 </div>
 <br/>
 
@@ -67,8 +68,6 @@ Results & Evaluation
 By using the model we saved earlier, we are inputting some of the steelpipe data, and then comparing it to the reference mesh by using 5 metrics:
 </div>
 - F1 Score: The harmonic mean of precision and recall, used to evaluate the performance of a classification model, especially in cases of imbalanced datasets. It is calculated as
-Inline: The formula is $F1 = 2 \cdot \frac{\text{Precision} \cdot \text{Recall}}{\text{Precision} + \text{Recall}}$.
-Block:
 $$
 F1 = 2 \cdot \frac{\text{Precision} \cdot \text{Recall}}{\text{Precision} + \text{Recall}}
 $$
