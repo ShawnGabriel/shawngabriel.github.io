@@ -13,9 +13,9 @@ In this project, <a href = "https://github.com/adhgn">Reyhan Pamungkas</a> and I
 Introduction to The Challenge
 =======
 <div style="text-align: justify;">
-The techniques that this project used, was utilized in biomedical imaging such as CT and SPECT scans, but we repurpose it for non-destructive testing of industrial components, such as steel pipes. By detecting manufacturing defects in <strong>steel pipes<strong>, the framework has industrial applications in <strong>quality assurance<strong> and <strong>safety<strong>. The challenge didn't provide a definitive guide that told us to recreate the solutions of the SMRVIS Paper, not until 2 days after the challenge was published. Hence, the methodologies tested can be seen as an experimentation phase, as we weren't given clear instructions on how to approach the problem.
+The techniques that this project used, was utilized in biomedical imaging such as CT and SPECT scans, but we repurpose it for non-destructive testing of industrial components, such as steel pipes. By detecting manufacturing defects in <strong>steel pipes<strong>, the framework has industrial applications in <strong>quality assurance</strong> and <strong>safety</strong>. The challenge didn't provide a definitive guide that told us to recreate the solutions of the SMRVIS Paper, not until 2 days after the challenge was published. Hence, the methodologies tested can be seen as an experimentation phase, as we weren't given clear instructions on how to approach the problem.
 </div>
-<br/>
+<br/><img src='images/Syncline_3DMeshReconstructionFromPointClouds.png'>
 
 Methodology
 ======
@@ -65,6 +65,11 @@ In all honesty, the R2 U-Net was one of the best performing models according to 
 Results & Evaluation
 ======
 <div style="text-align: justify;">
+We were successful in generating our model in a .keras file format. Moreover, our model was able to read the training set as seen above. However, an anomaly worth pointing out is that fact that the readings seem to be inverted, meaning that what is read by the model to be the blank space is part of the steel pipe and vice versa. Additionally, we experimented different learning rates for our model. It is evident that 0.0001 yields a better reading.
+</div>
+<br/><img src='images/Syncline_3DMeshReconstructionFromPointClouds-2.png'>
+<br/>
+<div style="text-align: justify;">
 By using the model we saved earlier, we are inputting some of the steelpipe data, and then comparing it to the reference mesh by using 5 metrics:
 </div>
 - F1 Score: The harmonic mean of precision and recall, used to evaluate the performance of a classification model, especially in cases of imbalanced datasets. It is calculated as
@@ -78,7 +83,7 @@ $$
 <div style="text-align: justify;">
 For direct Hausdorff Distance values, we failed to calculate them because it took a very long time to run it. This is due to us having very limited time and resources, we decided to not include the values here. Along with us not able to calculate the Hausdorff Distance, we also see that the value for each metrics are not ideal for a functioning and viable model. We suspect that these problems are resulted due to the resulting npz file having so many points compared to the reference mesh. Here it says that the npz file contains 83 million points inside the array, compared to the mesh file which only has 40,000 points. This makes each metric produce a unreasonable value.
 </div>
-
+<br/><img src='images/Syncline_3DMeshReconstructionFromPointClouds-3.png'>
 
 Challeges & Solutions
 ======
@@ -89,17 +94,18 @@ We breakdown our adversities into 4 categories:
 - Undefined Objects: There were some objects present within files c1load.py and c2.py that were not previously defined. We resolved this through asking for more context to ChatGPT and Claude. It gave us a hint of intuition on how we were supposed to define these objects ourselves.
 - Outdated Code: We had to execute various pip install commands that were not listed on the demo notebook in order to run the metrics for our model.
 </div>
+<br/><img src='images/Syncline_3DMeshReconstructionFromPointClouds-3.png'>
 
 Conclusion & Future Work
 ======
-as we recall from the result, we can conclude that our model somehow produced too many points. there was a reshape error
-has to do with this part of the code. here we tried to visualize one of the resulting npz file of our model. turns out it produced this 3d graph here, which has tons of points. not very much of a steel pipe right? this is more like a cube of points
-
-then, we tried to investigate two different resulting npz file from our model. which was number 3 and 4. when we compared them by using the np.array_equal function, turns out it came out as true. meaning that both file is actually the same even though they were produced from different input. 
-
-this means that our model was able to learn from the training model, as we presented earlier in the result section. but then not able to produce 
-
-
+<div style="text-align: justify;">
+As we recall from the result, we can conclude that our model needs more work, as somehow it produced too many points. There was a reshape error that had to do with this part of the code. Here, we tried to visualize one of the resulting npz file of our model. It turned out to produced this 3D graph below, which has a ton of points. Not very much of a steel pipe right? This is more like a cube of points.
+</div>
+<br/><img src='images/Syncline_3DMeshReconstructionFromPointClouds-4.png'>
+<div style="text-align: justify;">
+Then, we tried to investigate two different resulting npz files generated by our model, which was number 3 and 4. When we compared them using the np.array_equal function, it turned out to came out as true, even though they were produced from different inputs. This meant that our model was able to learn from the training model, as we presented earlier in the result section, but is unable to <strong>produce disntictive results</strong>.
+</div>
+<br/><img src='images/Syncline_3DMeshReconstructionFromPointClouds-5.png'>
 
 
 
