@@ -94,6 +94,7 @@ We breakdown our adversities into 4 categories:
 - Undefined Objects: There were some objects present within files c1load.py and c2.py that were not previously defined. We resolved this through asking for more context to ChatGPT and Claude. It gave us a hint of intuition on how we were supposed to define these objects ourselves.
 - Outdated Code: We had to execute various pip install commands that were not listed on the demo notebook in order to run the metrics for our model.
 </div>
+<br/>
 
 Conclusion & Future Work
 ======
