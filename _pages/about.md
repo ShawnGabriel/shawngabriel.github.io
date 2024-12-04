@@ -20,4 +20,4 @@ My Story
 ======
 During my highschool years in Indonesia, I always found excitement and joy in preparing for competitions. 
 
-<iframe width="560" height="315" src="files/OSN.mp4" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="/files/OSN.mp4" frameborder="0" allowfullscreen></iframe>
