@@ -1,7 +1,7 @@
 ---
 title: "YouTube Trending Data Analysis (Sep 2024)"
-excerpt: "<img src='/images/FirstByte.jpeg'><br/><br/>
-<strong>Best Data Analytics Award UBC BOLT's First Byte Data Analytics Case Competition<strong>
+excerpt: "<img src='/images/hq720.jpg'><br/><br/>
+<strong>For Stakeholders, YouTubers, and Parties Interested in Advertising<strong>
 <br/>"
 collection: portfolio
 ---
