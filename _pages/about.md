@@ -18,6 +18,6 @@ redirect_from:
 
 My Story 
 ======
-During my highschool years in Indonesia 🇮🇩, I always found excitement and joy in preparing for competitions. The best of months was when I achieved a silver medal for the National Science Olympiad 2022 held by The Ministry of Education, Research, Culture, and Technology, where I placed 14th out of 21560 students nation-wide. Following my triumph, I attended the national selection for the International Earth Science Olympiad in 2023. 
+During my highschool years in Indonesia 🇮🇩, I always found excitement and joy in preparing for competitions. The best of months was when I achieved a silver medal for the National Science Olympiad 2022 held by The Ministry of Education, Research, Culture, and Technology, where I placed 14th out of 21560 students nation-wide. Following my triumph, I attended the national selection for the 2023 International Earth Science Olympiad.
 
-<iframe width="640" height="352" src='https://youtube/embed/hF0_zxXkMVQ' frameborder="0" allowfullscreen></iframe>
+<iframe width="640" height="352" src="https://www.youtube.com/embed/hF0_zxXkMVQ" frameborder="0" allowfullscreen></iframe>
