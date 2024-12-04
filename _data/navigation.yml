@@ -20,7 +20,7 @@ main:
   - title: "CV"
     url: /files/Shawn Intong_Resume.pdf
     
-  - title: "Teaching"
-    url: /teaching/   
+  #- title: "Teaching"
+  #  url: /teaching/   
   #- title: "Guide"
   #  url: /markdown/
