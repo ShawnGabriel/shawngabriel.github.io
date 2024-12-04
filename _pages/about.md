@@ -21,6 +21,7 @@ The Experiences That Defined Me
 During my highschool years in Indonesia 🇮🇩, I always found excitement and joy in preparing for competitions. The best of months was when I achieved a silver medal for the National Science Olympiad 2022 held by The Ministry of Education, Research, Culture, and Technology, where I placed 14th out of 21560 students nation-wide. Following my triumph, I attended the national selection for the 2023 International Earth Science Olympiad. It was where I finally had a chance to connect, share interests, and meet my competitive partner for competitions at university!
 <iframe width="640" height="352" src="https://www.youtube.com/embed/hF0_zxXkMVQ" frameborder="0" allowfullscreen></iframe>
 <div align="center">
+<br/>
 <strong>When I Won The 2022 National Science Olympiad, Accompanied by Headmasters</strong>
 </div>
 <br/>
