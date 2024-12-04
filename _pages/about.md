@@ -6,7 +6,7 @@ redirect_from:
   - /about/
   - /about.html
 ---
-
+![Photo](/images/461607375_1043932940606482_1330846315708666768_n.jpg){: .align-right width="300px"}
 📘 I'm a second year student at the University of British Columbia
 <br/>
 <br/>
