@@ -8,7 +8,7 @@ collection: portfolio
 <div style="text-align: justify;">
 In this project, I attempt to provide insights for stakeholders, YouTubers, and parties planning to advertise on YouTube to enable them to make data-driven decisions. The code for this project can be found <a href = "https://github.com/ShawnGabriel/YouTube-Trending-Data-Analysis">here</a>.
 </div>
-<br/><img src='/images/opening infos.png'>
+<br/>
 
 # Project Background
 <div style="text-align: justify;">
@@ -33,7 +33,7 @@ The YouTube dataset comprises three CSV files, each representing a different cou
 <div style="text-align: justify;">
 Prior to beginning the analysis, a variety of checks were conducted for quality control and familiarization with the dataset.
 </div>
-
+<br/>
 # Executive Summary
 ### Overview of Findings
 <div style="text-align: justify;">
