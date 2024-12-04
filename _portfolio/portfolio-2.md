@@ -32,6 +32,7 @@ You will assist the CEO with each of the above points, including preparing the p
 ### Datasets
 <div style="text-align: justify;">
 The Datasets are from 4 distinct companies including our own (FlexField Fitness). Congregating all of them gives us the columns:
+</div>
 - Customer ID: String
 - Gender: String
 - Age: Integer
@@ -46,7 +47,6 @@ The Datasets are from 4 distinct companies including our own (FlexField Fitness)
 - Average Spend on Apparel ($/year): Float
 - Type of Apparel Purchased: String
 - Primary Apparel Purchase Channel: String
-</div>
 <br/>
 <iframe src="/files/opening infos-3.pdf" width="100%" height="600px">
 </iframe>
