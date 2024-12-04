@@ -29,7 +29,7 @@ Nice to have: An explanation of your data analysis steps and how you arrived at 
 
 You will assist the CEO with each of the above points, including preparing the presentation that she will deliver to the Board. State any assumptions clearly.
 </div>
-### Datasets
+## Datasets
 <div style="text-align: justify;">
 The Datasets are from 4 distinct companies including our own (FlexField Fitness). Congregating all of them gives us the columns:
 </div>
@@ -48,6 +48,9 @@ The Datasets are from 4 distinct companies including our own (FlexField Fitness)
 - Type of Apparel Purchased: String
 - Primary Apparel Purchase Channel: String
 <br/>
+
+Solutions & Insights
+=======
 <iframe src="/files/opening infos-3.pdf" width="100%" height="600px">
 </iframe>
 
