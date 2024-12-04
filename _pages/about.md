@@ -18,6 +18,6 @@ redirect_from:
 
 My Story 
 ======
-During my highschool years in Indonesia, I always found excitement and joy in preparing for competitions. 
+During my highschool years in Indonesia 🇮🇩, I always found excitement and joy in preparing for competitions. I was
 
-<iframe width="560" height="315" src="/files/OSN.mp4" frameborder="0" allowfullscreen></iframe>
+<iframe width="640" height="352" src="/files/OSN.mp4" frameborder="0" allowfullscreen></iframe>
