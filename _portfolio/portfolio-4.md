@@ -1,7 +1,7 @@
 ---
 title: "Netflix QuickSight Data Analysis"
-excerpt: "<img src='/images/DeepView.jpg'><br/><br/>
-<strong>2nd Place of UBC DSCI x DarkVision Computer Vision Hackathon<strong>
+excerpt: "<img src='/images/dashboard.png'><br/><br/>
+<strong>For Those Involved in Content Distribution, Trend Analysis, or Platform Strategy<strong>
 <br/>"
 collection: portfolio
 ---
