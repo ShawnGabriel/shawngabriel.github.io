@@ -28,7 +28,9 @@ This project enhances the ability of stakeholders to track and predict content t
 
 ### Overview
 This project aimed to create an interactive analytics dashboard to provide insights into trends in the production and release of movies and TV shows. The dashboard visualizes data such as the number of releases by year, a breakdown of genres released since 2015, and the addition of titles by specific dates. The goal was to assist stakeholders in making data-driven decisions to enhance content strategy and platform offerings.
-
+<br/>
+<img src='/images/dashboard.png'>
+<br/>
 ### Key Results
 - **Content Breakdown:** The dashboard highlights trends in movie vs. TV show production by year, revealing shifts in content preferences.
 - **Genre Analysis:** Focused insights into Thrillers, TV Comedies, and Action & Adventure genres since 2015 to guide genre-specific strategies.
