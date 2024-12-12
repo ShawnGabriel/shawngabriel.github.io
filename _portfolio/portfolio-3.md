@@ -1,5 +1,5 @@
 ---
-title: "YouTube Trending Data Analysis (Sep 2024)"
+title: "YouTube Trending Data Analysis"
 excerpt: "<img src='/images/hq720.jpg'><br/><br/>
 <strong>For Stakeholders, YouTubers, and Parties Interested in Advertising<strong>
 <br/>"
