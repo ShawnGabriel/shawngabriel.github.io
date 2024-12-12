@@ -1,5 +1,5 @@
 ---
-title: "FlexField Fitness Partnership Data Analysis (Oct 2024)"
+title: "FlexField Fitness Partnership Data Analysis"
 excerpt: "<img src='/images/FirstByte.jpeg'><br/><br/>
 <strong>Best Data Analytics Award UBC BOLT's First Byte Data Analytics Case Competition<strong>
 <br/>"
