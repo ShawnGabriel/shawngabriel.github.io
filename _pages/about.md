@@ -10,7 +10,7 @@ redirect_from:
 📘 I'm a second year student at the University of British Columbia
 <br/>
 <br/>
-📺 My interests are in Deep Reinforcement Learning and Computer Vision
+📺 My interests are in Computer Vision and currently exploring Deep RL!
 <br/>
 <br/>
 📝 I am also active in Hackathons and Case Competitions (take a glance at my portfolio!)
