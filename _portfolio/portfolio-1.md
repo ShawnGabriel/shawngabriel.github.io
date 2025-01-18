@@ -1,5 +1,5 @@
 ---
-title: "Stable Diffusion From Scratch"
+title: "Image Style Transfer using GAN"
 excerpt: "<img src='/images/DeepView.jpg'><br/><br/>
 <strong>2nd Place of UBC DSCI x DarkVision Computer Vision Hackathon<strong>
 <br/>"
