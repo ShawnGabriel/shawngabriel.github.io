@@ -1,7 +1,7 @@
 ---
 title: "Stable Diffusion From Scratch"
-excerpt: "<img src='/images/DeepView.jpg'><br/><br/>
-<strong>2nd Place of UBC DSCI x DarkVision Computer Vision Hackathon<strong>
+excerpt: "<img src='/images/Screenshot 2025-01-19 at 12.53.00.png'><br/><br/>
+<strong>Building Understanding in LDMs<strong>
 <br/>"
 collection: portfolio
 ---
