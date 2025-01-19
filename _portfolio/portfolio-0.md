@@ -5,7 +5,6 @@ excerpt: "<img src='/images/DeepView.jpg'><br/><br/>
 <br/>"
 collection: portfolio
 ---
-# Stable Diffusion from Scratch in PyTorch
 
 We model our data as a big joint distribution. Then, we learn the parameters through neural networks. Goal: learn the complex distribution so we can generate new data.
 
