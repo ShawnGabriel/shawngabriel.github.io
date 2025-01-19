@@ -36,5 +36,3 @@ z = μ + σ ⊙ ε
 
 Last thing I would like to address, how does the encoder compress the whole image into the normal distribution in the first place?
 It does that by capturing meaningful features of the image, which is segmented into separate latent dimensions. Each dimension will then hold a distinctive feature of the image, such as lighting, smile, head tilt, etc. After initializing the categories of the latent dimensions, training occurs through random initializations of epsilon and the parameters mu and sigma are updated according to the reconstruction loss and KL divergence.
-
-More of my insights [here](https://shawngabriel.github.io)!
