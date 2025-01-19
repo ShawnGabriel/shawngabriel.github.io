@@ -1,6 +1,6 @@
 ---
 title: "Image Style Transfer using GAN"
-excerpt: "<img src='/images/GAN.png'><br/><br/>
+excerpt: "<img src='/images/Web.png'><br/><br/>
 <strong>2nd Place of UBC DSCI x DarkVision Computer Vision Hackathon<strong>
 <br/>"
 collection: portfolio
